@@ -37,6 +37,18 @@ python recon_tool.py
 Follow the prompts to input the target domain and view the results.
 
 
+## Configuration File
+API keys are stored in a config.json file in the following format:
+
+```json
+{
+    "shodan_api_key": "your_shodan_api_key",
+    "virustotal_api_key": "your_virustotal_api_key"
+}
+```
+
+To manually edit this file, open it in a text editor and replace the placeholder values with your API keys.
+
 ## Wordlists
 Default wordlist for directory enumeration.
 ```
