@@ -18,13 +18,16 @@ cd ReconTool
 2. Install dependencies:
 ```bash
 pip install -r requirements.txt
-Configure API keys:
 ```
 
-3. Add your API keys for Shodan and VirusTotal in the recon_tool.py file:
-```python
-SHODAN_API_KEY = 'YOUR_SHODAN_API_KEY'
-VIRUSTOTAL_API_KEY = 'YOUR_VIRUSTOTAL_API_KEY'
+## Configuration File
+API keys are stored in a config.json file in the following format:
+
+```json
+{
+    "shodan_api_key": "your_shodan_api_key",
+    "virustotal_api_key": "your_virustotal_api_key"
+}
 ```
 
 ## Usage
@@ -36,16 +39,6 @@ python recon_tool.py
 
 Follow the prompts to input the target domain and view the results.
 
-
-## Configuration File
-API keys are stored in a config.json file in the following format:
-
-```json
-{
-    "shodan_api_key": "your_shodan_api_key",
-    "virustotal_api_key": "your_virustotal_api_key"
-}
-```
 
 To manually edit this file, open it in a text editor and replace the placeholder values with your API keys.
 
